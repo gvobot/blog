@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, DEFAULT_SITE } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>🌟 Hello!</h1>
+			<p>
+				Welcome to the official <a href={DEFAULT_SITE}>GVO</a> blog. This blog site gives you everything you need regarding safety, setup and more!
+			</p>
+			<p>
+				If you have any suggestions or ideas related to our blogs or concerns about safety, don't hesitate to reach out to us through our <a href="https://gvobot.app/discord">Discord</a> server. Your feedback is valuable and helps us create a better experience for everyone.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
